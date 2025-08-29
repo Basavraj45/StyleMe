@@ -1,0 +1,109 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#parent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+}
+#child1{
+    font-family: "Story Script", sans-serif;
+    font-size: larger;
+    background: linear-gradient(rgb(234, 0, 0),rgb(252, 214, 0));
+    color: transparent;
+    background-clip: text;
+}
+
+#edit-box{
+    height: 250px;
+    width: 270px;
+    border: 2px solid palevioletred;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#btn-download{
+    
+    height: 30px;
+    width: 90px;
+    padding:6px;
+    background-color: blueviolet;
+    border: none;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+#child4{
+    display: flex;
+    column-gap: 15px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+.tool-box{
+    height:200px;
+    width: 270px;
+    border: 2px solid rgba(234, 126, 126, 0.579);
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.tool-box > h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3px;
+    font-family: "Roboto Condensed", sans-serif;
+    
+    color: rgb(147, 61, 228);
+    background-color: rgba(230, 219, 190, 0.719);
+}
+
+.btn-BgColor{
+    cursor: pointer;
+   height: 40px;
+   width: 40px;
+   border: none;
+   border-radius: 50%;
+
+}
+
+.btn-BgColor-1,.btn-BgColor-2,.btn-BgColor-3{
+     
+    padding-top: 10px;
+    padding-left: 18px;
+}
+
+.btn-TxtColor{
+    cursor: pointer;
+   height: 40px;
+   width: 40px;
+   border: none;
+   border-radius: 50%;
+
+}
+
+.btn-TxtColor-1,.btn-TxtColor-2,.btn-TxtColor-3{
+     
+    padding-top: 10px;
+    padding-left: 18px;
+}
+
+.btn-font{
+    cursor: pointer;
+    height: 21px;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+}

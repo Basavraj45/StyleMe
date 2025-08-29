@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap" rel="stylesheet">
+    <title>StyleMe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="parent">
+        <div id="child1">
+            <h1>StyleMe</h1>
+        </div>
+        <div id="child2">
+            <div id="edit-box" contenteditable="true"></div>
+        </div>
+        <div id="child3">
+            <button id="btn-download" >Download</button>
+        </div>
+        <div id="child4">
+            <div class="tool-box">
+                <h3>Background Color</h3><hr>
+                <div class="btn-BgColor-1" >
+                    <button class="btn-BgColor" style="background-color: red;" onclick="changeBgColor('red')"></button>
+                    <button class="btn-BgColor" style="background-color: white; border: 1px solid black;" onclick="changeBgColor('white')"></button>
+                    <button class="btn-BgColor" style="background-color: orange;" onclick="changeBgColor('orange')"></button>
+                    <button class="btn-BgColor" style="background-color: yellow;" onclick="changeBgColor('yellow')"></button>
+                    <button class="btn-BgColor" style="background-color: purple;" onclick="changeBgColor('purple')"></button>
+                </div>
+                <div class="btn-BgColor-2">
+                    <button class="btn-BgColor" style="background-color: green;" onclick="changeBgColor('green')"></button>
+                    <button class="btn-BgColor" style="background-color: blue;" onclick="changeBgColor('blue')"></button>
+                    <button class="btn-BgColor" style="background-color: pink;" onclick="changeBgColor('pink')"></button>
+                    <button class="btn-BgColor" style="background-color: skyblue;" onclick="changeBgColor('skyblue')"></button>
+                    <button class="btn-BgColor" style="background-color:darkblue;" onclick="changeBgColor('darkblue')"></button>
+                 </div>
+                 <div class="btn-BgColor-3">
+                    <button class="btn-BgColor" style="background-color:aqua;" onclick="changeBgColor('aqua')"></button>
+                    <button class="btn-BgColor" style="background-color:blueviolet;" onclick="changeBgColor('blueviolet')"></button>
+                    <button class="btn-BgColor" style="background-color:black;" onclick="changeBgColor('black')"></button>
+                    <button class="btn-BgColor" style="background-color:bisque;" onclick="changeBgColor('bisque')"></button>
+                    <button class="btn-BgColor" style="background-color:lawngreen;" onclick="changeBgColor('lawngreen')"></button>
+                    
+                </div>
+
+            </div>
+            <div class="tool-box">
+                 <h3>Text Color</h3><hr>
+                <div class="btn-TxtColor-1" >
+                    <button class="btn-TxtColor" style="background-color: red;" onclick="changeTextColor('red')"></button>
+                    <button class="btn-TxtColor" style="background-color: white; border: 1px solid black;" onclick="changeTextColor('white')"></button>
+                    <button class="btn-TxtColor" style="background-color: orange;" onclick="changeTextColor('orange')"></button>
+                    <button class="btn-TxtColor" style="background-color: yellow;" onclick="changeTextColor('yellow')"></button>
+                    <button class="btn-TxtColor" style="background-color: purple;" onclick="changeTextColor('purple')"></button>
+                </div>
+                <div class="btn-BgColor-2">
+                    <button class="btn-TxtColor" style="background-color: green;" onclick="changeTextColor('green')"></button>
+                    <button class="btn-TxtColor" style="background-color: blue;" onclick="changeTextColor('blue')"></button>
+                    <button class="btn-TxtColor" style="background-color: pink;" onclick="changeTextColor('pink')"></button>
+                    <button class="btn-TxtColor" style="background-color: skyblue;" onclick="changeTextColor('skyblue')"></button>
+                    <button class="btn-TxtColor" style="background-color:darkblue;" onclick="changeTextColor('darkblue')"></button>
+                 </div>
+                 <div class="btn-BgColor-3">
+                    <button class="btn-TxtColor" style="background-color:aqua;" onclick="changeTextColor('aqua')"></button>
+                    <button class="btn-TxtColor" style="background-color:blueviolet;" onclick="changeTextColor('blueviolet')"></button>
+                    <button class="btn-TxtColor" style="background-color:black;" onclick="changeTextColor('black')"></button>
+                    <button class="btn-TxtColor" style="background-color:bisque;" onclick="changeTextColor('bisque')"></button>
+                    <button class="btn-TxtColor" style="background-color:lawngreen;" onclick="changeTextColor('lawngreen')"></button>
+                    
+                </div>
+
+
+            </div>
+            <div class="tool-box">
+                 <h3>Background Image</h3><hr>
+                 <div style="display: flex; align-items: center; justify-content: space-evenly;padding-top: 5px;">
+                     <img src="nature1.jpg" alt="" width="80" onclick="changeBgImage('nature1.jpg')" style="cursor: pointer;">
+                       <img src="nature2.jpg" alt="" width="80" onclick="changeBgImage('nature2.jpg')"  style="cursor: pointer;">
+                         <img src="nature3.jpg" alt="" width="80" onclick="changeBgImage('nature3.jpg')"  style="cursor: pointer;">
+                 </div>
+                 <div style="display: flex; align-items: center; justify-content: space-evenly;">
+                     <img src="texture1.jpg" alt="" width="80" onclick="changeBgImage('texture1.jpg')"  style="cursor: pointer;">
+                       <img src="texture2.webp" alt="" width="80" onclick="changeBgImage('texture2.webp')"  style="cursor: pointer;">
+                         <img src="texture3.jpg" alt="" width="80" onclick="changeBgImage('texture3.jpg')"  style="cursor: pointer;">
+                 </div>
+                   <div style="display: flex; align-items: center; justify-content: space-evenly;">
+                     <img src="bg4.avif" alt="" width="80" onclick="changeBgImage('bg4.avif')"  style="cursor: pointer;">
+                       <img src="bg7.webp" alt="" width="76" onclick="changeBgImage('bg7.webp')"  style="cursor: pointer;">
+                         <img src="bg1.avif" alt="" width="80" onclick="changeBgImage('bg1.avif')"  style="cursor: pointer;">
+                 </div>
+
+
+            </div>
+            <div class="tool-box">
+                
+                 <h3>Font Style</h3><hr>
+                 <div style="display: flex; flex-direction: column; row-gap: 18px;">
+                 <div style="display: flex ; column-gap: 11px;  padding-top: 10px;
+    padding-left: 18px;">
+                    <button class="btn-font" style="font-family:Papyrus;" onclick="changeFontStyle('Papyrus')">StyleMe</button>
+                    <button class="btn-font" style="font-family: Times New Roman;" onclick="changeFontStyle('Times New Roman')">StyleMe</button>
+                    <button class="btn-font" style="font-family: verdana;" onclick="changeFontStyle('verdana')">StyleMe</button>
+                 </div>
+
+                  <div style="display: flex ; column-gap: 11px;  padding-top: 10px;
+    padding-left: 18px;">
+                    <button class="btn-font" style="font-family: Arial;"  onclick="changeFontStyle('Arial')">StyleMe</button>
+                    <button class="btn-font" style="font-family: Impact;"  onclick="changeFontStyle('Impact')">StyleMe</button>
+                    <button class="btn-font" style="font-family: Georgia;"  onclick="changeFontStyle('Georgia')">StyleMe</button>
+                 </div>
+                  <div style="display: flex ; column-gap: 11px;  padding-top: 10px;
+    padding-left: 18px;">
+                    <button class="btn-font" style="font-family:cursive;"  onclick="changeFontStyle('cursive')">StyleMe</button>
+                    <button class="btn-font" style="font-family: Courier New;"  onclick="changeFontStyle('Courier New')">StyleMe</button>
+                    <button class="btn-font" style="font-family: verdana;"  onclick="changeFontStyle('verdana')">StyleMe</button>
+                 </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
