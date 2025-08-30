@@ -14,7 +14,7 @@
             <h1>StyleMe</h1>
         </div>
         <div id="child2">
-            <div id="edit-box" contenteditable="true"></div>
+            <div id="edit-box" contenteditable="true" style="text-decoration: none; overflow:hidden;">Type here....</div>
         </div>
         <div id="child3">
             <button id="btn-download" >Download</button>
@@ -29,12 +29,10 @@
                     <button class="btn-BgColor" style="background-color: yellow;" onclick="changeBgColor('yellow')"></button>
                     <button class="btn-BgColor" style="background-color: purple;" onclick="changeBgColor('purple')"></button>
                 </div>
-                <div class="btn-BgColor-2">
+                <div class="btn-BgColor-2" style="display: flex; justify-content: space-between;align-items: center; padding-right: 35px;">
                     <button class="btn-BgColor" style="background-color: green;" onclick="changeBgColor('green')"></button>
+                    <input type="color"  oninput="changeBgColor(event.target.value)">
                     <button class="btn-BgColor" style="background-color: blue;" onclick="changeBgColor('blue')"></button>
-                    <button class="btn-BgColor" style="background-color: pink;" onclick="changeBgColor('pink')"></button>
-                    <button class="btn-BgColor" style="background-color: skyblue;" onclick="changeBgColor('skyblue')"></button>
-                    <button class="btn-BgColor" style="background-color:darkblue;" onclick="changeBgColor('darkblue')"></button>
                  </div>
                  <div class="btn-BgColor-3">
                     <button class="btn-BgColor" style="background-color:aqua;" onclick="changeBgColor('aqua')"></button>
@@ -55,12 +53,10 @@
                     <button class="btn-TxtColor" style="background-color: yellow;" onclick="changeTextColor('yellow')"></button>
                     <button class="btn-TxtColor" style="background-color: purple;" onclick="changeTextColor('purple')"></button>
                 </div>
-                <div class="btn-BgColor-2">
+                <div class="btn-BgColor-2" style="display: flex; justify-content: space-between;align-items: center; padding-right: 35px;">
                     <button class="btn-TxtColor" style="background-color: green;" onclick="changeTextColor('green')"></button>
+                    <input type="color"  oninput="changeTextColor(event.target.value)">
                     <button class="btn-TxtColor" style="background-color: blue;" onclick="changeTextColor('blue')"></button>
-                    <button class="btn-TxtColor" style="background-color: pink;" onclick="changeTextColor('pink')"></button>
-                    <button class="btn-TxtColor" style="background-color: skyblue;" onclick="changeTextColor('skyblue')"></button>
-                    <button class="btn-TxtColor" style="background-color:darkblue;" onclick="changeTextColor('darkblue')"></button>
                  </div>
                  <div class="btn-BgColor-3">
                     <button class="btn-TxtColor" style="background-color:aqua;" onclick="changeTextColor('aqua')"></button>
